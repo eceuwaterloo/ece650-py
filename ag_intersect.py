@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 def pp(x):
     """Returns a pretty-print string representation of a number.
        A float number is represented by an integer, if it is whole,
@@ -54,5 +56,5 @@ if __name__ == '__main__':
     l2 = line(point(5, 6), point(3, 8))
     l3 = line(point(1, 5), point(5, 8))
 
-    print 'Intersection of', l1, 'with', l2, 'is', intersect(l1, l2)
-    print 'Intersection of', l2, 'with', l3, 'is', intersect(l2, l3)
+    print('Intersection of', l1, 'with', l2, 'is', intersect(l1, l2) )
+    print('Intersection of', l2, 'with', l3, 'is', intersect(l2, l3) )

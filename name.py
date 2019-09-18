@@ -1,4 +1,5 @@
 #!/usr/bin/python
+from __future__ import print_function
 
 # Sample program for names
 
@@ -13,8 +14,8 @@ while(True):
     r = '\('
     p = re.compile(r)
     if(p.match(name)):
-	errStr = 'The name ' + name + ' is weird.\n'
-	sys.stderr.write(errStr)
+        errStr = 'The name ' + name + ' is weird.'
+        print(errStr, file=sys.stderr)
     else:
-	s = 'The name ' + name + ' is ok.'
-	print s
+        s = 'The name ' + name + ' is ok.'
+        print(s)

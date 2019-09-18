@@ -1,3 +1,4 @@
+from __future__ import print_function
 class Point(object):
     def __init__ (self, x, y):
         self.x = float(x)
@@ -37,4 +38,4 @@ if __name__ == '__main__':
 
     l1 = Line (p1, p2)
     l2 = Line (p3, p4)
-    print 'Intersect of', l1, 'with', l2, 'is', intersect(l1, l2)
+    print('Intersect of', l1, 'with', l2, 'is', intersect(l1, l2))
